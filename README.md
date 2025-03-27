@@ -67,7 +67,7 @@ Màn hình hiển thị **Kết quả đúng hay sai, nếu sai thì hiển th�
    ```
 2. Mở **Android Studio** và import project.
 3. Chạy ứng dụng trên **Emulator** hoặc **thiết bị thật**.
-4. Nhập hệ số phương trình và xem kết quả.
+4. Nhập câu cần kiểm tra.
 
 
 ---
