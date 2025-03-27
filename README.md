@@ -40,25 +40,22 @@ Khi mở dự án, bạn sẽ thấy giao diện chính gồm **XML Layouts** v�
 
 ## 🎨 5. Thiết kế giao diện (Layout)
 
-### 🔹 Main Activity (Nhập hệ số phương trình)
-Màn hình chính để nhập **a, b, c** của phương trình bậc 2:
+### 🔹 Main Activity (Học sinh nhập câu)
+Màn hình chính để nhập câu cần kiểm tra và gửi đến cho giáo viên:
 ![Main Activity UI](images/5.png)
 
-### 🔹 Result Activity (Hiển thị kết quả)
-Màn hình hiển thị **nghiệm của phương trình** sau khi tính toán:
+### 🔹 Teacher Activity (Hiển thị kết quả)
+Màn hình hiển thị **Kết quả đúng hay sai, nếu sai thì hiển thị thông tin giáo viên đã sửa lại câu đó**:
 ![Result Activity UI](images/6.png)
 
 ---
 
 ## ⚙️ 6. Cách hoạt động
 
-1. **Người dùng nhập giá trị** của `a, b, c`.
-2. Nhấn nút **Giải phương trình**.
-3. Ứng dụng sẽ tính **nghiệm x1, x2** bằng công thức:
-   ```math
-   x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-   ```
-4. Hiển thị kết quả trong **Result Activity**.
+1. **Học sinh nhập câu cần kiểm tra vào ô hộp thư**.
+2. Sau khi nhập xong nhân nút**Gửi đến cho giáo viên**.
+3. Giáo viên sẽ kiểm tra tại màn hình TeacherActivity và sửa lỗi nếu sai:
+4. Hiển thị kết quả khi giáo viên đã kiểm tra được gửi đến lại cho Student trong **Main Activity**.
 
 ---
 
@@ -66,7 +63,7 @@ Màn hình hiển thị **nghiệm của phương trình** sau khi tính toán:
 
 1. Clone repo này về máy:
    ```sh
-   git clone https://github.com/Trung78z/AndroidApp_calc.git
+   git clone https://github.com/Trung78z/android-app_week_3.git
    ```
 2. Mở **Android Studio** và import project.
 3. Chạy ứng dụng trên **Emulator** hoặc **thiết bị thật**.
