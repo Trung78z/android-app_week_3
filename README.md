@@ -56,7 +56,39 @@ Màn hình hiển thị **Kết quả đúng hay sai, nếu sai thì hiển th�
 2. Sau khi nhập xong nhân nút**Gửi đến cho giáo viên**.
 3. Giáo viên sẽ kiểm tra tại màn hình TeacherActivity và sửa lỗi nếu sai:
 4. Hiển thị kết quả khi giáo viên đã kiểm tra được gửi đến lại cho Student trong **Main Activity**.
+5. Luồng hoạt động của Activity Result Handling
+# Activity Result Handling  
 
+## 📌 Mô tả  
+Ứng dụng sử dụng `setResult(...)` để trả kết quả từ một Activity con về Activity cha.  
+
+## ⚡ Cách hoạt động  
+
+### 1️⃣ Gọi Activity con từ Activity cha  
+```java
+Intent intent = new Intent(this, TeacherActivity.class);
+startActivityForResult(intent, REQUEST_CODE);
+```
+
+### 2️⃣ Trả kết quả từ Activity con  
+```java
+Intent resultIntent = new Intent();
+resultIntent.putExtra("teacherName", "Mr. John");
+setResult(RESULT_OK, resultIntent);
+finish();
+```
+
+### 3️⃣ Nhận kết quả ở Activity cha  
+```java
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
+        String teacherName = data.getStringExtra("teacherName");
+        Toast.makeText(this, "Teacher: " + teacherName, Toast.LENGTH_SHORT).show();
+    }
+}
+```
 ---
 
 ## 🛠️ 7. Cách chạy ứng dụng
