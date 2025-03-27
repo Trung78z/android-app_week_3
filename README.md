@@ -1,6 +1,6 @@
-# 📱 Android App: Tính toán phương trình bậc 2
+# 📱 Android App: Kiểm tra chính tả
 
-Ứng dụng Android giúp giải phương trình bậc 2 với giao diện đơn giản, dễ sử dụng.
+Ứng dụng Android giúp giáo viên có thể chấm sửa lỗi và đưa ra kết quả đến học sinh
 
 ---
 ## 🎬 Chương trình ứng dụng và kiểm thử
@@ -8,7 +8,7 @@
 ---
 
 ##  🎬 Xem tại Youtube
-[![Demo Video](https://img.youtube.com/vi/cNMM3-NPei0/0.jpg)](https://youtube.com/shorts/cNMM3-NPei0)
+[![Demo Video](https://img.youtube.com/vi/cNMM3-NPei0/0.jpg)](https://youtu.be/DI3SbAJHxEQ)
 
 ---
 
